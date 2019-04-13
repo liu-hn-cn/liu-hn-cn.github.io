@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>【标题】</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="【CSS文件】.css">
+  <script src="【JS文件】.js"></script>
+</head>
+<body onload="【加载完成、调用函数】main()">
+【内容】
+</body>
+</html>

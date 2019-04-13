@@ -1,0 +1,15 @@
+Object.entries(data).forEach(function (pair) {
+    // Object.entries...
+    // const object2 = { 0: 'a', 1: 'b', 2: 'c' };
+    // console.log(Object.entries(object2)[2]);
+    // expected output: Array ["2", "c"]
+    //
+    // forEach...
+    // var array1 = ['a', 'b', 'c'];
+    // array1.forEach(function(element) {
+    // console.log(element);
+    // });
+    // expected output: "a"
+    // expected output: "b"
+    // expected output: "c"
+    //

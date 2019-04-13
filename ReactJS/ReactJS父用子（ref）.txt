@@ -1,0 +1,21 @@
+class List extends React.Component {
+    constructor(props) {
+...
+        this.lineRef = new Array();
+        for(let i=0;i<=Object.keys(this.props.targets).length-1;i++) {
+            this.lineRef[i] = React.createRef();
+        }
+...
+    doNextTest() {
+        const currentLine = this.lineRef[this.data.currentIndex];
+...
+            this.data.img.src = currentLine.current.props.url+Math.random();
+...
+    render() {
+        return <div className={"list"}>{this.props.targets.map(function (item,index){
+            return <Line
+...
+                   ref={this.lineRef[index]} />;
+        }.bind(this))}</div>;
+    }
+...

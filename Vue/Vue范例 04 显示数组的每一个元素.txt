@@ -1,0 +1,9 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<button onclick="app.items.push({text:(new Date().toString())})">Add</button>
+<div id="app"><ol><li v-for="item in items">{{item.text}}</li></ol></div>
+<script>
+var app = new Vue({
+    el:"#app",
+    data:{items:[{text:"111"},{text:"222"}]}
+});
+</script>

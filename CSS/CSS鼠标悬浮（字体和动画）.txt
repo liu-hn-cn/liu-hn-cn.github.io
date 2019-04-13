@@ -1,0 +1,26 @@
+div.section>div.list>div.line>span.name:hover span.tip {
+  animation: tipAnimation 5s ease forwards;
+}
+
+div.section>div.list>div.line>span.name:hover {
+  font-weight: bold;
+  font-style: italic;
+}
+
+@keyframes tipAnimation {
+  10% {
+    visibility: visible;
+    left: 140px;
+    opacity:1;
+  }
+  60% {
+    visibility: visible;
+    left: 140px;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    left: 140px;
+    opacity: 0;
+  }
+}

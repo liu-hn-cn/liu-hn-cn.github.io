@@ -1,0 +1,6 @@
+array.forEach(function (item, i) {
+// The following code logs a line for each element in an array:
+// function logArrayElements(element, index, array) {
+//     console.log('a[' + index + '] = ' + element);
+// }
+//

@@ -1,0 +1,7 @@
+【顺序是１２点，顺时针】
+
+padding: 25px 50px 75px 100px;
+        top padding is 25px
+        right padding is 50px
+        bottom padding is 75px
+        left padding is 100px

@@ -1,0 +1,12 @@
+<style>
+.right {
+    float: right;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+</style>
+
+<div class="right">
+In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
+</div>

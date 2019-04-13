@@ -1,0 +1,4 @@
+/* Add an arrow after links */
+a::after {
+  content: "→";
+}

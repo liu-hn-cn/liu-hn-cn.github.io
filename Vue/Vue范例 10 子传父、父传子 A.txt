@@ -1,0 +1,20 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="app">
+<text-input v-on:changed="changed"></text-input>
+<text-output v-bind:prop1="text"></text-output>
+</div>
+<script>
+Vue.component("text-output", {
+    props: ["prop1"],
+    template: "<p>{{prop1}}</p>"
+});
+Vue.component("text-input", {
+    template: "<input type=\"text\" v-on:input=\"emit\">",
+    methods: {emit:function (){this.$emit('changed', event.target.value)}}
+});
+var app = new Vue({
+    el: "#app",
+    data: {text:""},
+    methods: {changed:function (value){this.text=value}}
+});
+</script>

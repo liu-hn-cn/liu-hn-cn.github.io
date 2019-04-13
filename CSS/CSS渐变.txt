@@ -1,0 +1,3 @@
+transition: all ease 1s;
+
+transition: all ease .5s;

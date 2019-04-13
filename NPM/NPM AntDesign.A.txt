@@ -1,0 +1,47 @@
+【命令】
+npm install babel-plugin-import --save-dev
+npm install antd --save
+
+【.babelrc】
+【尝试去掉这一步，结果是显示效果异常】
+...
+  "plugins": [
+    ["import", {
+      "libraryName": "antd",
+      "libraryDirectory": "es",
+      "style": "css"
+    }]
+  ]
+...
+
+【src/js/components/container/FormContainer.js】
+...
+import { DatePicker } from 'antd';//新添加的代码
+import locale from 'antd/lib/date-picker/locale/zh_CN';//新添加的代码（全部显示中文）
+import moment from 'moment';//新添加的代码（全部显示中文）
+import 'moment/locale/zh-cn';//新添加的代码（全部显示中文）
+moment.locale('zh-cn');//新添加的代码（全部显示中文）
+...
+  datePickerOnChange(a,b) {
+  	alert(b);
+  }
+...
+        <DatePicker locale={locale} onChange={this.datePickerOnChange}/>
+...
+
+【webpack.config.js】
+【新添加的代码】
+...
+var path = require('path');
+...
+      {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader'],
+          include: [path.join(__dirname, 'src'), path.join(__dirname, 'node_modules/antd')],
+      }
+...
+
+【命令】
+npm i style-loader --save-dev
+npm i css-loader --save-dev
+npm install moment --save

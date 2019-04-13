@@ -1,0 +1,14 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="app"><ol>
+<todo-item v-for="item in list" v-bind:prop1="item"></todo-item>
+</ol></div>
+<script>
+Vue.component("todo-item", {
+    props: ["prop1"],
+    template: "<li>{{prop1.text}}</li>"
+});
+var app = new Vue({
+    el: "#app",
+    data: {list:[{text:"111"},{text:"222"},{text:"333"}]}
+});
+</script>

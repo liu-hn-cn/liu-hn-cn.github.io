@@ -1,0 +1,26 @@
+【自动更新】
+
+
+
+    render() {
+        return <div><Message messageVisible={this.state.messageVisible} hideMessage={this.hideMessage} />
+               <Notice noticeVisible={this.state.noticeVisible} hideNotice={this.hideNotice}
+                allProvidersFinished={this.allProvidersFinished}
+                showMessage={this.showMessage}
+                clickedProvider={this.state.clickedProvider}
+                clickedName={this.state.clickedName}
+                clickedServer={this.state.clickedServer}
+                clickedDownload={this.state.clickedDownload} />
+...
+
+
+
+class Notice extends React.Component {
+...
+render() {
+...
+return <div className={"notice"}
+style={{visibility: this.props.noticeVisible?"visible":"hidden"}}>
+<span className={"bold"}>{this.props.clickedProvider}</span><br />
+{this.props.clickedName} <br />
+...

@@ -1,0 +1,16 @@
+data1 = {
+    Vultr: [{
+        name: "Frankfurt",
+        url: "http://fra-de-ping.vultr.com/",
+        download: "http://fra-de-ping.vultr.com/vultr.com.100MB.bin"
+    }, {
+        name: "Amsterdam",
+        url: "http://ams-nl-ping.vultr.com/",
+        download: "http://ams-nl-ping.vultr.com/vultr.com.100MB.bin"
+    }, 
+...
+    "EC2 (No Download)": [{
+        name: "North Virginia",
+        url: "http://18.204.0.0/"
+    }, 
+...

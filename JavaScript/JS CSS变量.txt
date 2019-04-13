@@ -1,0 +1,1 @@
+task.line.parentElement.style.setProperty("--max-delay", maxDelay);

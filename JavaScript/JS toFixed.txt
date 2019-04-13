@@ -1,0 +1,1 @@
+document.getElementById("speed").innerText = (mb/seconds).toFixed(3).toString() + " MBps";

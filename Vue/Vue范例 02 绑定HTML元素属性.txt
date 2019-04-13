@@ -1,0 +1,6 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<input type="text" oninput="app.url=event.target.value" value="http://www.qq.com/">
+<div id="app"><a v-bind:href="url">link</a></div>
+<script>
+var app = new Vue({el:"#app", data: {url:"http://www.qq.com/"}});
+</script>

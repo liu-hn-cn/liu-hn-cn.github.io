@@ -1,0 +1,3 @@
+"use strict";
+const height = 400;
+let x = 1;

@@ -1,0 +1,54 @@
+class App extends React.Component {
+constructor(props) {
+...
+this.showNotice=this.showNotice.bind(this);
+...
+showNotice(clickedProvider, clickedName, clickedServer, clickedDownload) {
+...
+render() {
+...
+<List
+    showNotice={this.showNotice}
+...
+
+
+
+class List extends React.Component {
+...
+render() {
+...
+<Line
+...
+showNotice={this.props.showNotice}
+...
+
+
+
+class Line extends React.Component {
+...
+render() {
+...
+<Name locationName={this.props.name} download={this.props.download}
+provider={this.props.provider}
+url={this.props.url}
+showNotice={this.props.showNotice} />
+
+
+
+class Name extends React.Component {
+    constructor(props) {
+        super(props);
+        this.handleClick = this.handleClick.bind(this);
+    }
+    handleClick() {
+...
+        this.props.showNotice(this.props.provider, this.props.locationName, server, this.props.download);
+    }
+    render() {
+...
+        return <span className="name" onClick={this.handleClick} style={spanStyle}>
+               {this.props.locationName}
+               <Tip className="tip" downloadText={this.props.download==void(0)?"Show Server":"Server&Download"}/>
+               </span>;
+    }
+}

@@ -1,0 +1,2 @@
+const el = document.createElement(tag);
+el.textContent = text;

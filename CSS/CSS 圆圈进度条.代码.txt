@@ -1,0 +1,65 @@
+<style>
+.container{
+    width: 110px;
+    height: 110px;
+    margin: 100px auto;
+}
+.prec{
+    top: 30px;
+    position: relative;
+    font-size: 30px;
+}
+.circle{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #E6F4F7;
+}
+.active-border{
+    position: relative;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    background-color:#39B4CC;
+    background-image:
+        linear-gradient(91deg, transparent 50%, #A2ECFB 50%),
+        linear-gradient(90deg, #A2ECFB 50%, transparent 50%);
+}
+</style>
+
+<!-- "180" = 90+90, 90/360 = 25% -->
+<div class="container">
+    <div id="activeBorder" class="active-border" style="background-image:linear-gradient(180deg, transparent 50%, #A2ECFB 50%),linear-gradient(90deg, #A2ECFB 50%, transparent 50%);">
+        <div id="circle" class="circle">
+            <span class="prec" id="prec">25%</span>
+        </div>
+    </div>
+</div>
+
+<!-- "180" = 270-90, 270/360 = 75% -->
+<div class="container">
+    <div id="activeBorder" class="active-border" style="background-image:linear-gradient(180deg, transparent 50%, #39B4CC 50%),linear-gradient(90deg, #A2ECFB 50%, transparent 50%);">
+        <div id="circle" class="circle">
+            <span class="prec" id="prec">75%</span>
+        </div>
+    </div>
+</div>
+
+<!--
+if (i<=180){
+    activeBorder.css('background-image','linear-gradient(' + (90+i) + 'deg, transparent 50%, #A2ECFB 50%),linear-gradient(90deg, #A2ECFB 50%, transparent 50%)');
+}
+else{
+    activeBorder.css('background-image','linear-gradient(' + (i-90) + 'deg, transparent 50%, #39B4CC 50%),linear-gradient(90deg, #A2ECFB 50%, transparent 50%)');
+}
+-->
+
+<!--
+https://stackoverflow.com/questions/24393993/create-a-percentage-circle-with-css
+http://jsfiddle.net/zap4f/1/
+-->

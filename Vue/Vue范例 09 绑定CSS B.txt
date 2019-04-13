@@ -1,0 +1,10 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="app"><button v-on:click="decrease">Click</button>
+<p v-bind:style="{fontSize:size+'px'}">Test</p></div>
+<script>
+var app = new Vue({
+    el: "#app",
+    data:{size:200},
+    methods:{decrease:function (){this.size=this.size-5}}
+});
+</script>

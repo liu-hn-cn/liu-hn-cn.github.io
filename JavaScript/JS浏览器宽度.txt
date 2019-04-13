@@ -1,0 +1,9 @@
+    var x=window.innerWidth;
+    if(x==undefined)
+    {
+        x=document.documentElement.clientWidth;
+    }
+    if(x==undefined)
+    {
+        x=document.body.clientWidth;
+    }

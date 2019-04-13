@@ -1,0 +1,23 @@
+<style>
+.inner {
+  display: inline-block;
+  vertical-align: middle;
+  background: yellow;
+  padding: 3px 5px;
+}
+.block2 {
+  background: orange;
+  height: 80px;
+}
+.block2:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+</style>
+
+<div class="block2">
+<div class="inner">Inline-Block</div>
+<div class="inner">Inline-Block</div>
+</div>

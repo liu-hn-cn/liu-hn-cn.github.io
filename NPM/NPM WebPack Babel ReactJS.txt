@@ -1,0 +1,187 @@
+【命令】
+mkdir web-project-d
+cd web-project-d
+mkdir src
+npm init -y
+npm i webpack --save-dev
+npm i webpack-cli --save-dev
+
+【package.json】
+"scripts": {
+  "build": "webpack --mode production"
+}
+
+【命令】
+npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+
+【.babelrc】
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
+
+【webpack.config.js】
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      }
+    ]
+  }
+};
+
+【命令】
+npm i react react-dom --save-dev
+mkdir src\js\components\container
+mkdir src\js\components\presentational
+
+【src/js/components/container/FormContainer.js】
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import Input from "../presentational/Input";
+class FormContainer extends Component {
+  constructor() {
+    super();
+    this.state = {
+      seo_title: ""
+    };
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange(event) {
+    this.setState({ [event.target.id]: event.target.value });
+  }
+  render() {
+    const { seo_title } = this.state;
+    return (
+      <form id="article-form">
+        <Input
+          text="SEO title"
+          label="seo_title"
+          type="text"
+          id="seo_title"
+          value={seo_title}
+          handleChange={this.handleChange}
+        />
+      </form>
+    );
+  }
+}
+export default FormContainer;
+
+【命令】
+npm i prop-types --save-dev
+
+【src/js/components/presentational/Input.js】
+import React from "react";
+import PropTypes from "prop-types";
+const Input = ({ label, text, type, id, value, handleChange }) => (
+  <div className="form-group">
+    <label htmlFor={label}>{text}</label>
+    <input
+      type={type}
+      className="form-control"
+      id={id}
+      value={value}
+      onChange={handleChange}
+      required
+    />
+  </div>
+);
+Input.propTypes = {
+  label: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired
+};
+export default Input;
+
+【src/index.js】
+import FormContainer from "./js/components/container/FormContainer";
+
+【命令】
+npm run build
+npm i html-webpack-plugin html-loader --save-dev
+
+【webpack.config.js】
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader"
+          }
+        ]
+      }
+    ]
+  },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: "./src/index.html",
+      filename: "./index.html"
+    })
+  ]
+};
+
+【src/index.html】
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" >
+    <title>How to set up React, Webpack, and Babel</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-4 offset-md-1">
+                <p>Create a new article</p>
+                <div id="create-article-form">
+                    <!-- form -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+【src/js/components/container/FormContainer.js】
+【add the following at the bottom of the file】
+const wrapper = document.getElementById("create-article-form");
+wrapper ? ReactDOM.render(<FormContainer />, wrapper) : false;
+
+【命令】
+npm run build
+
+【dist/index.html】
+【已经生成结果】
+
+【src/js/components/container/FormContainer.js】
+...
+      <form id="article-form">
+        <Input
+          text={this.state.seo_title}//修改这一行代码（以前是："SEO title"）
+          label="seo_title"
+          type="text"
+...
+
+【命令】
+npm run build
+
+【dist/index.html】
+【修改文本框内容，页面文字会跟着改变】

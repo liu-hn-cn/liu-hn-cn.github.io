@@ -1,0 +1,5 @@
+display: inline-block;
+
+Compared to display: block, the major difference is that 
+display: inline-block does not add a line-break after the element, 
+so the element can sit next to other elements.

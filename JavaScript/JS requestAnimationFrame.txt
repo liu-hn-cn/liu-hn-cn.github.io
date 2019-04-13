@@ -1,0 +1,11 @@
+let nextTick = window.requestAnimationFrame || window.setTimeout
+// The delay function
+// The window.requestAnimationFrame() method tells the browser
+// that you wish to perform an animation and requests
+// that the browser call a specified function
+// to update an animation before the next repaint.
+//
+...
+function handleTasks() {
+...
+nextTick(handleTasks);

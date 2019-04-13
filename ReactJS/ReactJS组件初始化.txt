@@ -1,0 +1,14 @@
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {allData: data, messageVisible: false, noticeVisible: false,
+                      clickedProvider: "", clickedName: "", clickedServer: "", clickedDownload: ""};
+        this.data = {countOfFinishedProviders: 0};
+        this.providerFinished=this.providerFinished.bind(this);
+        this.allProvidersFinished=this.allProvidersFinished.bind(this);
+        this.showMessage=this.showMessage.bind(this);
+        this.hideMessage=this.hideMessage.bind(this);
+        this.showNotice=this.showNotice.bind(this);
+        this.hideNotice=this.hideNotice.bind(this);
+    }
+...

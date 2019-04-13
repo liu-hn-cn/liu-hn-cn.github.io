@@ -1,0 +1,3 @@
+newRankListSort.sort(function (a,b) {
+    return a.milliseconds - b.milliseconds;
+});

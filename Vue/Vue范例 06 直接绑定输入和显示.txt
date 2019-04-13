@@ -1,0 +1,11 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="app">
+<p>{{message}}</p>
+<input type="text" v-model="message" value="123">
+</div>
+<script>
+var app = new Vue({
+    el:"#app",
+    data:{message:"123"}
+});
+</script>

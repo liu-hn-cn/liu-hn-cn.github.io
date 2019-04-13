@@ -1,0 +1,14 @@
+【命令】
+npm install --save-dev webpack-bundle-analyzer
+
+【webpack.config.js】
+...
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+...
+  plugins: [
+...
+    new BundleAnalyzerPlugin({analyzerMode: 'static'})
+...
+
+【dist/report.html】
+【文件已经生成】

@@ -1,0 +1,14 @@
+relative
+    The element is positioned according to the normal flow of the document, 
+    and then offset relative to itself based on the values of 
+    top, right, bottom, and left.
+
+absolute
+    The element is removed from the normal document flow, 
+    and no space is created for the element in the page layout. 
+    It is positioned relative to its closest positioned ancestor
+    
+fixed
+    The element is removed from the normal document flow, 
+    and no space is created for the element in the page layout. 
+    It is positioned relative to the initial containing block established by the viewport

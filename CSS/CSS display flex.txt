@@ -1,0 +1,5 @@
+p {
+  display: flex;
+}
+
+The flex container becomes flexible by setting the display property to flex

@@ -1,0 +1,5 @@
+let newRankListWithNewData = JSON.parse(JSON.stringify(this.state.rankList));
+
+let newMillisecondsOfTargets = this.state.millisecondsOfTargets.slice();
+(JavaScript Array slice() Method)
+(The slice() method returns a shallow copy)

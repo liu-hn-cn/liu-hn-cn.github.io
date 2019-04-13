@@ -1,0 +1,11 @@
+<div id="div1" class="class1 class3"></div>
+<div id="div2"></div>
+
+<script>
+a=document.getElementById("div1");
+b=document.getElementById("div2");
+c=a.classList.contains("class1");
+d=a.classList.contains("class2");
+e=a.classList.contains("class3");
+b.textContent=c.toString()+" "+d.toString()+" "+e.toString();
+</script>

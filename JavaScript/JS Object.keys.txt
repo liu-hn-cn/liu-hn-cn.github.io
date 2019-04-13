@@ -1,0 +1,4 @@
+dataKeys = Object.keys(data);
+for(i=0;i<=dataKeys.length-1;i++) {
+    dataEntry = data[dataKeys[i]];
+...

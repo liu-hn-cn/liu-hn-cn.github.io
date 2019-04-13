@@ -1,0 +1,1 @@
+const resultArea = document.querySelector("#result");

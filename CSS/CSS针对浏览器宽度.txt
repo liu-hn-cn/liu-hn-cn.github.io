@@ -1,0 +1,39 @@
+@media (min-width: 650px) and (max-width: 949px) {
+  #result {
+    column-count: 2;
+    column-gap: 20px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: white;
+  }
+  .content {
+    width: 600px;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+  .title {
+    padding: 6px 0px 0px 0px;
+  }
+}
+
+@media (min-width: 950px) {
+  #result {
+    column-count: 3;
+    column-gap: 20px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: white;
+  }
+  .content {
+    width: 900px;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+  .title {
+    padding: 0px 0px 0px 0px;
+  }
+}

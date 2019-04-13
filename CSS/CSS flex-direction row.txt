@@ -1,0 +1,3 @@
+flex-direction: row;
+
+row 	Default value. The flexible items are displayed horizontally, as a row

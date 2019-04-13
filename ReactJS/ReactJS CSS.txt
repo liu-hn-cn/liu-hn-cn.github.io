@@ -1,0 +1,13 @@
+class Line extends React.Component {
+    render() {
+        return <div className={"line"}
+               style={{transform: "translateY(" + (this.props.index*(18+2)) + "px)",
+               zIndex: this.props.number - this.props.index + 1}}>
+...
+
+
+
+const sectionStyle = {height: this.state.allData[item].length*(18+2) + 30 + "px"};
+return (
+<div className={"section"} key={index} style={sectionStyle}><h3>{item}</h3>
+...

@@ -1,0 +1,1 @@
+vw	Relative to 1% of the width of the viewport

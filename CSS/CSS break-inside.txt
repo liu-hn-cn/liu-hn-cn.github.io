@@ -1,0 +1,5 @@
+break-inside: avoid-column;
+
+
+
+defines how page, column, or region breaks should behave

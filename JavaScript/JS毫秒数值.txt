@@ -1,0 +1,4 @@
+startTime = new Date().getTime();
+...
+endTime = new Date().getTime();
+const seconds = (endTime-startTime)/1000;

@@ -1,0 +1,5 @@
+currentSubTasks = tasks.shift();
+...
+// The shift() method removes the first element
+// from an array and returns that removed element.
+//

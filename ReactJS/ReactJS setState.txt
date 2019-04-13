@@ -1,0 +1,10 @@
+    showMessage() {
+        this.setState({messageVisible: true});
+    }
+    showNotice(clickedProvider, clickedName, clickedServer, clickedDownload) {
+...
+        this.setState({clickedProvider: clickedProvider, clickedName: clickedName,
+                       clickedServer: clickedServer, clickedDownload: clickedDownload,
+                       noticeVisible: true});
+...
+    }

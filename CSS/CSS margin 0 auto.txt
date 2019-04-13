@@ -1,0 +1,12 @@
+margin: 0 auto;
+
+
+
+the object will sit centrally within it's parent container.
+
+
+
+margin-top:0;
+margin-bottom:0;
+margin-left:auto;
+margin-right:auto;

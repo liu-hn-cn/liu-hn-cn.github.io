@@ -1,0 +1,6 @@
+.pagelink {
+  white-space: nowrap;
+  margin-left: 15px;
+  display: inline-block;
+  width: 255px;
+}
