@@ -1,0 +1,9 @@
+<style>
+#div1 {
+    background-image: linear-gradient(to right, blue , yellow);
+    width:300px;
+    height:100px;
+}
+</style>
+
+<div id="div1"></div>

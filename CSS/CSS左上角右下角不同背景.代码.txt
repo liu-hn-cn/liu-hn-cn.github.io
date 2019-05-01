@@ -1,0 +1,7 @@
+<style>
+.a {
+    background:linear-gradient(to bottom right,blue 50%,yellow 50%);
+}
+</style>
+
+<div class="a" style="width:30px;height:30px;"></a>

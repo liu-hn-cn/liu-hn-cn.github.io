@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<style>
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="http://img4.imgtn.bdimg.com/it/u=2742567110,4237299384&fm=26&gp=0.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="http://img0.imgtn.bdimg.com/it/u=2739968081,964591321&fm=26&gp=0.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="http://img3.imgtn.bdimg.com/it/u=515176473,3021781356&fm=26&gp=0.jpg">
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+</div>

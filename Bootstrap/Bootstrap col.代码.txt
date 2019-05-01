@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+<div class="container-fluid">
+    <div class="row" style="background-color:blue;">
+        <div class="col-xs-12">...</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-3" style="background-color:green;">...</div>
+        <div class="col-xs-12 col-md-6 col-lg-3" style="background-color:orange;">...</div>
+        <div class="col-xs-12 col-md-6 col-lg-3" style="background-color:gray;">...</div>
+        <div class="col-xs-12 col-md-6 col-lg-3" style="background-color:pink;">...</div>
+    </div>
+    <div class="row" style="background-color:yellow;">
+        <div class="col-xs-12">...</div>
+    </div>
+</div>

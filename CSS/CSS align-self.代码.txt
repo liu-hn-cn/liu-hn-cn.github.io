@@ -1,0 +1,5 @@
+<div style="display:flex;align-items:center;background-color:blue;width:100px;height:100px">
+<div>1</div>
+<div>2</div>
+<div style="align-self:flex-end;">3</div>
+</div>

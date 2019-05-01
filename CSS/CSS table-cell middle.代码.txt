@@ -1,0 +1,17 @@
+<style>
+#parent {
+  display: table;
+  width:300px;
+  height:200px;
+}
+#child {
+  display: table-cell;
+  vertical-align: middle;
+  background-color:yellow;
+  text-align:center;
+}
+</style>
+
+<div id="parent">
+  <div id="child">Content here</div>
+</div>

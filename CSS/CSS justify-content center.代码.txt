@@ -1,0 +1,36 @@
+<style>
+* {
+padding: 0;
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+ul {
+height: 100%;
+}
+li {
+display: flex;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+.first {
+height: 20%;
+background: silver;
+}
+.second {
+height: 30%;
+background: lightgray;
+}
+.third {
+height: 30%;
+background: silver;
+}
+</style>
+
+<ul>
+<li class="first">This is the text</li>
+<li class="second">This is text in a taller list item</li>
+<li class="third">This is so much text that<br> it goes to a second line</li>
+</ul>

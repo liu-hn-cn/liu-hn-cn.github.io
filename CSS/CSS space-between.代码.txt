@@ -1,0 +1,16 @@
+<style>
+.header {
+    background: #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+</style>
+
+<div class="header">
+    Title
+    <div class="nav">
+        <a>A Link</a>
+        <a>Another Link</a>
+        <a>A Third Link</a>
+    </div>
+</div>

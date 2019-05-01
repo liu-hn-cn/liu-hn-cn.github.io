@@ -1,0 +1,20 @@
+<style>
+#box2{
+    position:relative;
+    top:-50px;
+    margin-bottom:-50px;
+    width:100px;
+    height:100px;
+    background-color:gray;
+    opacity:0.5;
+    box-sizing:border-box;
+    border:6px solid black;
+}
+</style>
+
+<div style="width:100px;height:100px;background-color:blue;">
+</div>
+<div id="box2">
+</div>
+<div style="width:100px;height:100px;background-color:yellow;">
+</div>
