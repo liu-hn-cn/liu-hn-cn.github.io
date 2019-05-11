@@ -1,0 +1,5 @@
+<script>
+a="<span>AAAAA</span><div>BBBBB</div>";
+a=a.replace(/<(?:.|\n)*?>/gm, '');
+console.log(a);
+</script>

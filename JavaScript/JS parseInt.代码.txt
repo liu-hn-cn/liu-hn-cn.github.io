@@ -1,0 +1,4 @@
+<script>
+var n = parseInt("2018@geeksforgeeks");
+console.log(n);
+</script>

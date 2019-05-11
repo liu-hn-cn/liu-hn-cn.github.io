@@ -1,0 +1,10 @@
+<script>
+a={};
+b=[];
+c=1;
+d="a";
+console.log(Object.prototype.toString.call(a));
+console.log(Object.prototype.toString.call(b));
+console.log(Object.prototype.toString.call(c));
+console.log(Object.prototype.toString.call(d));
+</script>
