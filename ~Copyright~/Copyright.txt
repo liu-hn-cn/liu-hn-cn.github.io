@@ -1,0 +1,9 @@
+StackOverflow contains screenshots of MSDN:
+https://stackoverflow.com/questions/50124077/how-do-i-create-a-multiple-version-api-documentation-in-sandcastle-a-la-msdn-ver
+https://stackoverflow.com/questions/20776791/which-one-is-wrong-msdn-or-headerfile
+https://stackoverflow.com/questions/30403257/byref-vs-byval-for-the-readprocessmemory-function/30408373
+So I believe: it's OK to take screenshots for technical reference.
+
+If you disagree, please:
+ * Email liuzhiyong@email.com - it's quite easy to remove/change/replace items, and I don't want to get into trouble(it should take less than 48 hours to remove items in question).
+ * If you believe such little screenshots have caused significant damage, you can sue me: my name is Liu Zhiyong(before 2009, I was known as Liu Dieyu), and I'm a Chinese citizen living in China.
