@@ -2,6 +2,17 @@ StackOverflow contains screenshots of MSDN:
 https://stackoverflow.com/questions/50124077/how-do-i-create-a-multiple-version-api-documentation-in-sandcastle-a-la-msdn-ver
 https://stackoverflow.com/questions/20776791/which-one-is-wrong-msdn-or-headerfile
 https://stackoverflow.com/questions/30403257/byref-vs-byval-for-the-readprocessmemory-function/30408373
+
+GitHub contains screenshots of StackOverflow:
+http://nicercode.github.io/2014-02-18-UTS/lessons/01-intro_r/stackoverflow.png
+https://naryssa-fia.github.io/images/Bad_Question_Ex.png
+https://crisnow.github.io/images/goodExample.jpg
+
+Twitter contains screenshot of GitHub:
+https://pbs.twimg.com/media/DiWHJBzUEAATWVZ.jpg
+https://pbs.twimg.com/media/DpyZRJbWkAAExeY.jpg
+https://pbs.twimg.com/media/Cb0NmsaXIAIsjug.png
+
 So I believe: it's OK to take screenshots for technical reference.
 
 If you disagree, please:

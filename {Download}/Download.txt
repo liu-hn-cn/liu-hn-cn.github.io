@@ -1,1 +1,2 @@
 https://github.com/liu-hn-cn/liu-hn-cn.github.io/releases
+https://gitee.com/liu-hn-cn/liu-hn-cn/releases
